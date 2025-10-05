@@ -1,22 +1,22 @@
 [
-  {
-    "Id": 1,
-    "Model": "Legion Pro 7 Gen 10 (16\" AMD)",
-    "Brand": "Lenovo",
-    "Price": 2649.00,
-    "Currency": "EURO",
-    "Description": "AMD Ryzen™ 9000 HX X3D-serie",
-    "Category": "Laptop",
-    "In_stock": true
-  },
-  {
-    "Id": 2,
-    "Model": "ThinkPad P16s Gen 4 (16\" Intel)",
-    "Brand": "Lenovo",
-    "Price": 1368.01,
-    "Currency": "EURO",
-    "Description": "Intel® Core™ Ultra 9 285H vPro®-processor (E-cores tot 4.50 GHz en P-cores tot 5.40 GHz)",
-    "Category": "Laptop",
-    "In_stock": true
-  }
+    {
+        "Id": 1,
+        "Model": "Legion Pro 7 Gen 10 (16\" AMD)",
+        "Brand": "Lenovo",
+        "Price": 2649,
+        "Currency": "EURO",
+        "Description": "AMD Ryzen™ 9000 HX X3D-serie",
+        "Category": "Laptop",
+        "In_stock": true
+    },
+    {
+        "Id": 2,
+        "Model": "ThinkPad P16s Gen 4 (16\" Intel)",
+        "Brand": "Lenovo",
+        "Price": 1368.01,
+        "Currency": "EURO",
+        "Description": "Intel® Core™ Ultra 9 285H vPro®-processor (E-cores tot 4.50 GHz en P-cores tot 5.40 GHz)",
+        "Category": "Laptop",
+        "In_stock": true
+    }
 ]
