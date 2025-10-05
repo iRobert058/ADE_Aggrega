@@ -128,7 +128,7 @@ def get_product(product_id: int) -> HTMLResponse:
 def get_products_raw() -> List[dict]:
     return products
 
-# Retrieve single product as JSON without styling so individual fields can be accessed
+# Retrieve single product as JSON without styling for debugging
 @app.get("/products/{product_id}/raw")
 def get_product_raw(product_id: int) -> dict:
     for p in products:
