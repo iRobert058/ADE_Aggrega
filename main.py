@@ -40,6 +40,7 @@ def render_products_html(items: List[dict]) -> str:
                 cells.append(f"<td>{html.escape(str(value))}</td>")
             rows.append(f"<tr>{''.join(cells)}</tr>")
         body = "".join(rows)
+
     # Return the document with styling
     return f"""<!DOCTYPE html>
     <html lang=\"en\">
@@ -68,8 +69,8 @@ def render_products_html(items: List[dict]) -> str:
                 overflow: hidden;
             }}
             thead {{
-                background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
-                color: white;
+                background: linear-gradient(135deg, #FFEA61 0%, #FFD400 100%);
+                color: black;
             }}
             th, td {{
                 padding: 0.75rem 1rem;
