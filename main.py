@@ -119,10 +119,17 @@ def render_products_html(items: List[dict]) -> str:
     </html>
     """
 
+# Utility to keep responses sorted
+def sort_products_by_id(items: List[dict]) -> List[dict]:
+    return sorted(items, key=lambda product: product.get("Id", float("inf")))
+
+def sort_products_by_price(items: List[dict]) -> List[dict]:
+    return sorted(items, key=lambda product: product.get("Price", float("inf")))
+
 # Show all products in a styled HTML table
 @app.get("/products", response_class=HTMLResponse)
 def get_products_styled() -> HTMLResponse:
-    return HTMLResponse(content=render_products_html(products))
+    return HTMLResponse(content=render_products_html(sort_products_by_id(products)))
 
 # Show products matching a specific ID using the same styled table
 @app.get("/products/{product_id}", response_class=HTMLResponse)
@@ -130,4 +137,4 @@ def get_product(product_id: int) -> HTMLResponse:
     matched_products = [p for p in products if p.get("Id") == product_id]
     if not matched_products:
         raise HTTPException(status_code=404, detail={"error": "Product not found"})
-    return HTMLResponse(content=render_products_html(matched_products))
+    return HTMLResponse(content=render_products_html(sort_products_by_price(matched_products)))

@@ -53,5 +53,16 @@
         "Retailer": "Coolblue",
         "Category": "Laptop",
         "In_stock": true
+    },
+        {
+        "Id": 3,
+        "Model": "MacBook Pro 14-inch (2023)",
+        "Brand": "Apple",
+        "Price": 1000,
+        "Currency": "EURO",
+        "Description": "Apple M2 Pro-chip met 10-core CPU en 16-core GPU",
+        "Retailer": "Amac Premium Reseller",
+        "Category": "Laptop",
+        "In_stock": true
     }
 ]
