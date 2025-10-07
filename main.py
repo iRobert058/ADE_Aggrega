@@ -124,10 +124,10 @@ def render_products_html(items: List[dict]) -> str:
 def get_products_styled() -> HTMLResponse:
     return HTMLResponse(content=render_products_html(products))
 
-# Show individual product in the same styled table
+# Show products matching a specific ID using the same styled table
 @app.get("/products/{product_id}", response_class=HTMLResponse)
 def get_product(product_id: int) -> HTMLResponse:
-    for p in products:
-        if p["Id"] == product_id:
-            return HTMLResponse(content=render_products_html([p]))
-    raise HTTPException(status_code=404, detail="Product not found")
+    matched_products = [p for p in products if p.get("Id") == product_id]
+    if not matched_products:
+        raise HTTPException(status_code=404, detail={"error": "Product not found"})
+    return HTMLResponse(content=render_products_html(matched_products))

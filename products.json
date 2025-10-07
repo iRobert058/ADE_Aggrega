@@ -6,6 +6,7 @@
         "Price": 2649,
         "Currency": "EURO",
         "Description": "AMD Ryzen™ 9000 HX X3D-serie",
+        "Retailer": "Coolblue",
         "Category": "Laptop",
         "In_stock": true
     },
@@ -16,6 +17,40 @@
         "Price": 1368.01,
         "Currency": "EURO",
         "Description": "Intel® Core™ Ultra 9 285H vPro®-processor (E-cores tot 4.50 GHz en P-cores tot 5.40 GHz)",
+        "Retailer": "Mediamarkt",
+        "Category": "Laptop",
+        "In_stock": true
+    },
+        {
+        "Id": 1,
+        "Model": "Legion Pro 7 Gen 10 (16\" AMD)",
+        "Brand": "Lenovo",
+        "Price": 2500,
+        "Currency": "EURO",
+        "Description": "AMD Ryzen™ 9000 HX X3D-serie",
+        "Retailer": "Mediamarkt",
+        "Category": "Laptop",
+        "In_stock": true
+    },
+    {
+        "Id": 3,
+        "Model": "MacBook Pro 14-inch (2023)",
+        "Brand": "Apple",
+        "Price": 2499,
+        "Currency": "EURO",
+        "Description": "Apple M2 Pro-chip met 10-core CPU en 16-core GPU",
+        "Retailer": "Apple Store",
+        "Category": "Laptop",
+        "In_stock": true
+    },
+    {
+        "Id": 3,
+        "Model": "MacBook Pro 14-inch (2023)",
+        "Brand": "Apple",
+        "Price": 2000,
+        "Currency": "EURO",
+        "Description": "Apple M2 Pro-chip met 10-core CPU en 16-core GPU",
+        "Retailer": "Coolblue",
         "Category": "Laptop",
         "In_stock": true
     }
