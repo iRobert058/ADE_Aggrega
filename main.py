@@ -48,18 +48,21 @@ def render_products_html(items: List[dict]) -> str:
         <meta charset=\"UTF-8\" />
         <title>Aggrega Products</title>
         <style>
-            :root {{
+            root {{
                 color-scheme: light dark;
                 font-family: system-ui, sans-serif;
             }}
+
             body {{
                 margin: 2rem;
                 background: #f5f5f5;
                 color: #222;
             }}
+
             h1 {{
                 margin-bottom: 1rem;
             }}
+
             table {{
                 width: 100%;
                 border-collapse: collapse;
@@ -68,21 +71,26 @@ def render_products_html(items: List[dict]) -> str:
                 border-radius: 12px;
                 overflow: hidden;
             }}
+
             thead {{
-                background: linear-gradient(135deg, #FFEA61 0%, #FFD400 100%);
+                background: #FFD400;
                 color: black;
             }}
+
             th, td {{
                 padding: 0.75rem 1rem;
                 border-bottom: 1px solid rgba(0, 0, 0, 0.05);
                 text-align: left;
             }}
+
             tbody tr:nth-child(even) {{
                 background: rgba(75, 108, 183, 0.08);
             }}
+
             tbody tr:hover {{
                 background: rgba(24, 40, 72, 0.1);
             }}
+
             @media (prefers-color-scheme: dark) {{
                 body {{
                     background: #121212;
